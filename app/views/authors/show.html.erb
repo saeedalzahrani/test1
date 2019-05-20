@@ -3,5 +3,10 @@
 <p><%= @authors.last_name %></p>
 <p> <%= link_to 'destroy this author!', author_path(@authors), method: :delete %></p>
 
+<p> <%= link_to 'View Books', author_books_path(@authors) %> </p>
 
 
+
+<h2>
+    <%= link_to 'Create a book', new_author_book_path(@authors) %>
+</h2>
