@@ -1,0 +1,7 @@
+<h1> update your profile  </h1>
+<%= form_for @patient, url: {action: "update"} do |f| %>
+    <%= f.text_field :first_name %>
+    <%= f.text_field :last_name%>
+    <%= f.text_field :diagnosis %>
+    <%= f.submit "save" %>
+<% end %>

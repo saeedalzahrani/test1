@@ -1,0 +1,7 @@
+<p> <%= link_to "Back", authors_path %> </p>
+<h1><%= @authors.first_name %></h1>
+<p><%= @authors.last_name %></p>
+<p> <%= link_to 'destroy this author!', author_path(@authors), method: :delete %></p>
+
+
+

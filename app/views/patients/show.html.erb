@@ -1,0 +1,7 @@
+<p> <%= link_to "Back", patients_path %> </p>
+<h1><%= @patient.first_name %></h1>
+<p><%= @patient.last_name %></p>
+<p><%= @patient.diagnosis %></p>
+<p><%= @patient.born_on %></p>
+<%= link_to "edit", edit_patient_path(@patient) %>
+<p> <%= link_to 'destroy this hestory of pt!!!', patient_path(@patient), method: :delete %></p>
