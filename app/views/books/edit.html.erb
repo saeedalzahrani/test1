@@ -1,5 +1,7 @@
 <h1> update your book  </h1>
 <%= form_for @book, url: {action: "update"} do |f| %>
     <%= f.text_field :title %>
+    <%= f.text_field :original_language %>
+    <%= f.date_field :print_date %>
     <%= f.submit "save" %>
 <% end %>

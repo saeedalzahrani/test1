@@ -1,5 +1,6 @@
 <p> <%= link_to "Back", books_path %> </p>
 <h1><%= @book.title %></h1>
-
+ <h2><%=  @book.original_language %></h2>
+  <h2><%= @book.print_date %></h2>
 <%= link_to "edit", edit_book_path(@book) %>
 <p> <%= link_to 'destroy this book!', book_path(@book), method: :delete %></p>
